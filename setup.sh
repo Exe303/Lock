@@ -174,6 +174,7 @@ echo -e "${tyblue}'------------------------------------------'${NC}"
 sleep 2
 clear
 wget https://gitlab.com/Exe302/udp/-/raw/main/udp && bash udp
+rm -f /root/udp
 #Install Udpgw
 echo -e "${tyblue}.------------------------------------------.${NC}"
 echo -e "${tyblue}|          PROCESS INSTALLED UDPGW          |${NC}"
