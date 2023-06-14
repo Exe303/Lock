@@ -12,10 +12,10 @@ ver=$VERSION_ID
 country=ID
 state=Jawa-Timur
 locality=Bojonegoro
-organization=mdxclod
-organizationalunit=mdxcloud
-commonname=mdxcloud
-email=admin@mdx.net
+organization=ACellTun
+organizationalunit=ACellTun
+commonname=ACellTun
+email=admin@ACellTun
 
 # simple password minimal
 curl -sS https://raw.githubusercontent.com/Exe303/Lock/main/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
@@ -47,7 +47,6 @@ cat > /etc/rc.local <<-END
 # By default this script does nothing.
 exit 0
 END
-
 
 # Ubah izin akses
 chmod +x /etc/rc.local
@@ -160,7 +159,7 @@ sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g'
 
 cd
 # install stunnel
-#apt install stunnel4 -y
+apt install stunnel4 -y
 cat > /etc/stunnel/stunnel.conf <<-END
 cert = /etc/stunnel/stunnel.pem
 client = no
@@ -175,10 +174,6 @@ connect = 127.0.0.1:22
 [dropbear]
 accept = 777
 connect = 127.0.0.1:109
-
-[ws-stunnel]
-accept = 2096
-connect = 700
 
 [openvpn]
 accept = 442
@@ -234,11 +229,6 @@ chmod +x speedtest
 chmod +x xp
 chmod +x auto-set
 cd
-#Install Server UDP
-wget https://gitlab.com/Exe302/udp/-/raw/main/udp && bash udp
-rm -f /root/udp
-
-
 cat > /etc/cron.d/re_otm <<-END
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
