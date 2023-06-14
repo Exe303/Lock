@@ -259,7 +259,7 @@ echo "    [INFORMASI TROJAN]"  | tee -a log-install.txt
 echo "    ---------------------------------------" | tee -a log-install.txt
 echo "   - Websocket Trojan        : 443"  | tee -a log-install.txt
 echo "   - Trojan GRPC             : 443"  | tee -a log-install.txt
-echo "   - Ssh UDP                : 1-63530"  | tee -a log-install.txt
+echo "   - Ssh UDP                 : 1-63530"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "======================[SCRIPT PREMIUM BY MARDHEX]====================="
 echo ""
