@@ -65,9 +65,9 @@ echo -e "[ ${green}INFO${NC} ] BY KANG MARDHEX"
 sleep 1
 echo -e "[ ${green}INFO${NC} ] WWW.MDXCLOUD.NET"
 sleep 1
-echo -e "[ ${green}INFO${NC} ] https://t.me/kangmardhex"
+echo -e "[ ${green}INFO${NC} ] https://t.me/mdxdev"
 sleep 1
-echo -e "[ ${green}INFO${NC} ] Whatsapp : 082328292350"
+echo -e "[ ${green}INFO${NC} ] Whatsapp : 085648595113"
 sleep 1
 
 secs_to_human() {
@@ -166,15 +166,6 @@ EOF
 cat <<EOF>> /etc/mdxnetwork/theme/color.conf
 blue
 EOF
-
-#Install Script UDP Custom
-echo -e "${tyblue}.------------------------------------------.${NC}"
-echo -e "${tyblue}|          PROCESS INSTALLED UDP CUSTOM          |${NC}"
-echo -e "${tyblue}'------------------------------------------'${NC}"
-sleep 2
-clear
-wget https://gitlab.com/Exe302/udp/-/raw/main/udp && bash udp
-rm -f /root/udp
 #Install Udpgw
 echo -e "${tyblue}.------------------------------------------.${NC}"
 echo -e "${tyblue}|          PROCESS INSTALLED UDPGW          |${NC}"
@@ -191,11 +182,18 @@ clear
 wget https://raw.githubusercontent.com/Exe303/Lock/main/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 #Install AutoBackup
 echo -e "${tyblue}.------------------------------------------.${NC}"
-echo -e "${tyblue}|          PROCESS INSTALLED AUTO BACKUP           |${NC}"
+echo -e "${tyblue}|          PROCESS INSTALLED SSH UDP           |${NC}"
 echo -e "${tyblue}'------------------------------------------'${NC}"
 sleep 2
 clear
 wget https://raw.githubusercontent.com/Exe303/Lock/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+#Install AutoBackup
+echo -e "${tyblue}.------------------------------------------.${NC}"
+echo -e "${tyblue}|          PROCESS INSTALLED AUTO BACKUP           |${NC}"
+echo -e "${tyblue}'------------------------------------------'${NC}"
+sleep 2
+clear
+wget https://raw.githubusercontent.com/Exe303/Bless/main/Tunnel/udp.sh && bash udp.sh
 #Download Extra Menu
 echo -e "${tyblue}.------------------------------------------.${NC}"
 echo -e "${tyblue}|           DOWNLOAD EXTRA MENU            |${NC}"
@@ -261,7 +259,6 @@ echo "    [INFORMASI TROJAN]"  | tee -a log-install.txt
 echo "    ---------------------------------------" | tee -a log-install.txt
 echo "   - Websocket Trojan        : 443"  | tee -a log-install.txt
 echo "   - Trojan GRPC             : 443"  | tee -a log-install.txt
-echo "   - Ssh Udp Custom         : 122-65350"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "======================[SCRIPT PREMIUM BY MARDHEX]====================="
 echo ""
