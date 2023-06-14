@@ -182,18 +182,11 @@ clear
 wget https://raw.githubusercontent.com/Exe303/Lock/main/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 #Install AutoBackup
 echo -e "${tyblue}.------------------------------------------.${NC}"
-echo -e "${tyblue}|          PROCESS INSTALLED SSH UDP           |${NC}"
+echo -e "${tyblue}|          PROCESS INSTALLED AUTO BACKUP          |${NC}"
 echo -e "${tyblue}'------------------------------------------'${NC}"
 sleep 2
 clear
 wget https://raw.githubusercontent.com/Exe303/Lock/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
-#Install AutoBackup
-echo -e "${tyblue}.------------------------------------------.${NC}"
-echo -e "${tyblue}|          PROCESS INSTALLED AUTO BACKUP           |${NC}"
-echo -e "${tyblue}'------------------------------------------'${NC}"
-sleep 2
-clear
-wget https://raw.githubusercontent.com/Exe303/Bless/main/Tunnel/udp.sh && bash udp.sh
 #Download Extra Menu
 echo -e "${tyblue}.------------------------------------------.${NC}"
 echo -e "${tyblue}|           DOWNLOAD EXTRA MENU            |${NC}"
@@ -259,7 +252,7 @@ echo "    [INFORMASI TROJAN]"  | tee -a log-install.txt
 echo "    ---------------------------------------" | tee -a log-install.txt
 echo "   - Websocket Trojan        : 443"  | tee -a log-install.txt
 echo "   - Trojan GRPC             : 443"  | tee -a log-install.txt
-echo "   - Ssh UDP                 : 1-63530"  | tee -a log-install.txt
+echo "   - Ssh UDP                : 1-63530"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "======================[SCRIPT PREMIUM BY MARDHEX]====================="
 echo ""

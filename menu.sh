@@ -169,11 +169,11 @@ echo -e "$COLOR1 ${WH}Upload${NC}     ${WH}$today_rx $today_rxv      $yesterday_
 echo -e "$COLOR1 ${COLOR1}Total${NC}    ${COLOR1}  $todayd $today_v     $yesterday $yesterday_v      $month $month_v  ${NC} "
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"   
-echo -e "  ${WH}[${COLOR1}01${WH}]${NC} ${COLOR1}• ${WH}VMESS   ${WH}[${COLOR1}${status_xray}${WH}]   ${WH}[${COLOR1}06${WH}]${NC} ${COLOR1}• ${WH}THEMES   ${WH}[${COLOR1}Menu${WH}]  $COLOR1 $NC"  
-echo -e "  ${WH}[${COLOR1}02${WH}]${NC} ${COLOR1}• ${WH}VLESS   ${WH}[${COLOR1}${status_xray}${WH}]   ${WH}[${COLOR1}07${WH}]${NC} ${COLOR1}• ${WH}BACKUP   ${WH}[${COLOR1}Menu${WH}]  $COLOR1 $NC"  
-echo -e "  ${WH}[${COLOR1}03${WH}]${NC} ${COLOR1}• ${WH}TROJAN  ${WH}[${COLOR1}${status_xray}${WH}]   ${WH}[${COLOR1}08${WH}]${NC} ${COLOR1}• ${WH}ADD DOMAIN ${WH}[${COLOR1}menu${WH}]  $COLOR1 $NC"  
-echo -e "  ${WH}[${COLOR1}04${WH}]${NC} ${COLOR1}• ${WH}SS WS   ${WH}[${COLOR1}${status_xray}${WH}]   ${WH}[${COLOR1}09${WH}]${NC} ${COLOR1}• ${WH}RENEW CERT ${WH}[${COLOR1}menu${WH}]  $COLOR1 $NC" 
-echo -e "  ${WH}[${COLOR1}05${WH}]${NC} ${COLOR1}• ${WH}SSH UDP ${WH}[${COLOR1}Menu${WH}] ${WH}[${COLOR1}10${WH}]${NC} ${COLOR1}• ${WH}SETTINGS ${WH}[${COLOR1}Menu${WH}]  $COLOR1 $NC"
+echo -e "  ${WH}[${COLOR1}01${WH}]${NC} ${COLOR1}• ${WH}VMESS   ${WH}[${COLOR1}${status_xray}${WH}]   ${WH}[${COLOR1}05${WH}]${NC} ${COLOR1}• ${WH}THEMES   ${WH}[${COLOR1}Menu${WH}]  $COLOR1 $NC"  
+echo -e "  ${WH}[${COLOR1}02${WH}]${NC} ${COLOR1}• ${WH}VLESS   ${WH}[${COLOR1}${status_xray}${WH}]   ${WH}[${COLOR1}06${WH}]${NC} ${COLOR1}• ${WH}BACKUP   ${WH}[${COLOR1}Menu${WH}]  $COLOR1 $NC"  
+echo -e "  ${WH}[${COLOR1}03${WH}]${NC} ${COLOR1}• ${WH}TROJAN  ${WH}[${COLOR1}${status_xray}${WH}]   ${WH}[${COLOR1}07${WH}]${NC} ${COLOR1}• ${WH}ADD DOMAIN ${WH}[${COLOR1}menu${WH}]  $COLOR1 $NC"  
+echo -e "  ${WH}[${COLOR1}04${WH}]${NC} ${COLOR1}• ${WH}SS WS   ${WH}[${COLOR1}${status_xray}${WH}]   ${WH}[${COLOR1}08${WH}]${NC} ${COLOR1}• ${WH}RENEW CERT ${WH}[${COLOR1}menu${WH}]  $COLOR1 $NC" 
+echo -e "  ${WH}[${COLOR1}05${WH}]${NC} ${COLOR1}• ${WH}THEMES ${WH}[${COLOR1}Menu${WH}] ${WH}[${COLOR1}09${WH}]${NC} ${COLOR1}• ${WH}SETTINGS ${WH}[${COLOR1}Menu${WH}]  $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 myver="$(cat /opt/.ver)"
 
@@ -200,12 +200,11 @@ case $opt in
 02 | 2) clear ; menu-vless ;;
 03 | 3) clear ; menu-trojan ;;
 04 | 4) clear ; menu-ss ;;
-05 | 5) clear ; menu-ssh ;;
-06 | 6) clear ; menu-theme ;;
-07 | 7) clear ; menu-backup ;;
-08 | 8) clear ; add-host ;;
-09 | 9) clear ; crtxray ;;
-10) clear ; menu-set ;;
+05 | 5) clear ; menu-theme ;;
+06 | 6) clear ; menu-backup ;;
+07 | 7) clear ; add-host ;;
+08 | 8) clear ; crtxray ;;
+09) clear ; menu-set ;;
 100) clear ; $up2u ;;
 00 | 0) clear ; menu ;;
 *) clear ; menu ;;
