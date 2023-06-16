@@ -173,7 +173,7 @@ echo -e "  ${WH}[${COLOR1}01${WH}]${NC} ${COLOR1}• ${WH}VMESS   ${WH}[${COLOR1
 echo -e "  ${WH}[${COLOR1}02${WH}]${NC} ${COLOR1}• ${WH}VLESS   ${WH}[${COLOR1}${status_xray}${WH}]   ${WH}[${COLOR1}06${WH}]${NC} ${COLOR1}• ${WH}BACKUP   ${WH}[${COLOR1}Menu${WH}]  $COLOR1 $NC"  
 echo -e "  ${WH}[${COLOR1}03${WH}]${NC} ${COLOR1}• ${WH}TROJAN  ${WH}[${COLOR1}${status_xray}${WH}]   ${WH}[${COLOR1}07${WH}]${NC} ${COLOR1}• ${WH}ADD DOMAIN ${WH}[${COLOR1}menu${WH}]  $COLOR1 $NC"  
 echo -e "  ${WH}[${COLOR1}04${WH}]${NC} ${COLOR1}• ${WH}SS WS   ${WH}[${COLOR1}${status_xray}${WH}]   ${WH}[${COLOR1}08${WH}]${NC} ${COLOR1}• ${WH}RENEW CERT ${WH}[${COLOR1}menu${WH}]  $COLOR1 $NC" 
-echo -e "  ${WH}[${COLOR1}05${WH}]${NC} ${COLOR1}• ${WH}THEMES ${WH}[${COLOR1}Menu${WH}] ${WH}[${COLOR1}09${WH}]${NC} ${COLOR1}• ${WH}SETTINGS ${WH}[${COLOR1}Menu${WH}]  $COLOR1 $NC"
+echo -e "  ${WH}[${COLOR1}09${WH}]${NC} ${COLOR1}• ${WH}SETTINGS ${WH}[${COLOR1}Menu${WH}]  $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 myver="$(cat /opt/.ver)"
 
@@ -196,7 +196,7 @@ echo -e "$COLOR1└────────────────────�
 echo -e ""
 echo -ne " ${WH}Select menu ${COLOR1}: ${WH}"; read opt
 case $opt in
-01 | 1) clear ; menu-vmess ;;
+01  | 1) clear ; menu-vmess ;;
 02 | 2) clear ; menu-vless ;;
 03 | 3) clear ; menu-trojan ;;
 04 | 4) clear ; menu-ss ;;
@@ -204,7 +204,7 @@ case $opt in
 06 | 6) clear ; menu-backup ;;
 07 | 7) clear ; add-host ;;
 08 | 8) clear ; crtxray ;;
-09) clear ; menu-set ;;
+09 | 9) clear ; menu-set ;;
 100) clear ; $up2u ;;
 00 | 0) clear ; menu ;;
 *) clear ; menu ;;
